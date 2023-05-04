@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainAnchorPaneInQuery" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.NewsfeedForQueryController">
+    <children>
+      <ImageView fitHeight="675.0" fitWidth="1080.0">
+         <image>
+            <Image url="@queryBac.jpg" />
+         </image>
+      </ImageView>
+        <AnchorPane layoutX="780.0" prefHeight="50.0" prefWidth="300.0">
+            <children>
+                <TextField layoutY="15.0" prefHeight="25.0" prefWidth="220.0" />
+                <Button layoutX="222.5" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.5" text="Search" />
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="25.0" prefWidth="780.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#goBack" prefHeight="35.0" prefWidth="25.0" style="-fx-background-color: dark blue;">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@back.PNG" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+        </AnchorPane>
+        <AnchorPane layoutY="25.0" prefHeight="25.0" prefWidth="780.0">
+            <children>
+                <Button layoutX="695.0" mnemonicParsing="false" onAction="#creatPostButtonActionEvent" style="-fx-background-radius: 5;" text="Creat Post" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="200.0" layoutY="50.0" prefHeight="25.0" prefWidth="600.0">
+            <children>
+                <Button layoutX="30.0" mnemonicParsing="false" onAction="#allPostActionEvent" prefHeight="25.0" style="-fx-background-radius: 30;" text="All" />
+                <Button layoutX="94.0" mnemonicParsing="false" onAction="#announcementActionEvent" style="-fx-background-radius: 30;" text="Announcement" />
+                <Button layoutX="243.0" mnemonicParsing="false" onAction="#contestAnnouncementActionEvent" style="-fx-background-radius: 30;" text="Conntest Announcement" />
+                <Button layoutX="423.0" mnemonicParsing="false" onAction="#queryActionEvent" style="-fx-background-radius: 30;" text="Query" />
+            </children>
+        </AnchorPane>
+        <ScrollPane fx:id="scrollablePaneforNewsfeed" fitToWidth="true" layoutX="200.0" layoutY="75.0" maxHeight="600.0" prefWidth="600.0" />
+      <AnchorPane layoutY="35.0" prefHeight="640.0" prefWidth="170.0">
+         <children>
+            <VBox prefHeight="640.0" prefWidth="170.0" style="-fx-background-color: #3F2B63;">
+               <children>
+                  <AnchorPane prefHeight="147.0" prefWidth="170.0" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#gotoTeachersPortal" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #3F2B63;" text="Teacher" textFill="#ece3e3">
+                     <graphic>
+                        <FontAwesomeIconView fill="#fff9f9" glyphName="USER" selectionFill="#fcf8f8" text="" />
+                     </graphic>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#gotoNewsFeed" prefHeight="54.0" prefWidth="175.0" style="-fx-background-color: #3F2B63;" text="News Feed" textFill="#ece3e3">
+                     <graphic>
+                        <FontAwesomeIconView fill="#f4efef" glyphName="DASHBOARD" text="" />
+                     </graphic>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#gotoStudentsPortal" prefHeight="50.0" prefWidth="163.0" style="-fx-background-color: #3F2B63;" text="Students" textFill="#ece3e3">
+                     <graphic>
+                        <FontAwesomeIconView fill="#faf2f2" glyphName="GROUP" />
+                     </graphic>
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#gotoContestPage" prefHeight="50.0" prefWidth="156.0" style="-fx-background-color: #3F2B63;" text="Contest" textFill="#ece3e3">
+                     <graphic>
+                        <FontAwesomeIconView fill="#f7f5f5" text="" />
+                     </graphic>
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#gotoLearningPortal" prefHeight="50.0" prefWidth="157.0" style="-fx-background-color: #3F2B63;" text="Learning" textFill="#ece3e3">
+                     <graphic>
+                        <FontAwesomeIconView fill="#efebeb" glyphName="BOOK" />
+                     </graphic>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="216.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="50.0" prefWidth="157.0" style="-fx-background-color: #3F2B63;" text="Log Out" textFill="#ece3e3">
+                     <graphic>
+                        <FontAwesomeIconView fill="#efebeb" glyphName="BOOK" />
+                     </graphic>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

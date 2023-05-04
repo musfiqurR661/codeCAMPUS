@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import java.lang.String?>
+<AnchorPane prefHeight="675.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.MainController">
+   <stylesheets>
+      <String fx:value="style.css"/>
+   </stylesheets>
+   <children>
+      <AnchorPane layoutX="540.0" prefHeight="675.0" prefWidth="540.0">
+         <children>
+            <ImageView fitHeight="675.0" fitWidth="1080.0" layoutX="-540.0">
+               <image>
+                  <Image url="@19187761.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="loginFx" layoutX="247.0" layoutY="334.0" mnemonicParsing="false" onAction="#gotoLogInPage" styleClass="login-button" text="Login" />
+            <Button fx:id="signUpFx" layoutX="394.0" layoutY="334.0" mnemonicParsing="false" onAction="#gotoSignInPage" styleClass="signup-button" text="signup" />
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="-433.0" layoutY="253.0">
+               <image>
+                  <Image url="@../../../pcLogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

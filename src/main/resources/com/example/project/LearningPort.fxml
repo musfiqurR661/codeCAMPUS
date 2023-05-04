@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1080.0" style="-fx-background-color: wheat;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.LearninPortController">
+   <children>
+      <ImageView fitHeight="675.0" fitWidth="1080.0">
+         <image>
+            <Image url="@learningport.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="35.0" prefWidth="1080.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#goBack" prefHeight="35.0" prefWidth="25.0" style="-fx-background-color: #3F2B63;" />
+            <ImageView>
+               <image>
+                  <Image url="@back.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="35.0" prefHeight="640.0" prefWidth="170.0">
+         <children>
+            <VBox prefHeight="640.0" prefWidth="170.0" style="-fx-background-color: #3F2B63;">
+               <children>
+                  <AnchorPane prefHeight="158.0" prefWidth="170.0" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#gotoTeachersPortal" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #3F2B63;" text="Teacher" textFill="#ece3e3">
+                     <graphic>
+                        <FontAwesomeIconView fill="#fff9f9" glyphName="USER" selectionFill="#fcf8f8" text="" />
+                     </graphic>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#gotoNewsFeed" prefHeight="54.0" prefWidth="175.0" style="-fx-background-color: #3F2B63;" text="News Feed" textFill="#ece3e3">
+                     <graphic>
+                        <FontAwesomeIconView fill="#f4efef" glyphName="DASHBOARD" text="" />
+                     </graphic>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#gotoStudentsPortal" prefHeight="50.0" prefWidth="163.0" style="-fx-background-color: #3F2B63;" text="Students" textFill="#ece3e3">
+                     <graphic>
+                        <FontAwesomeIconView fill="#faf2f2" glyphName="GROUP" />
+                     </graphic>
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#gotoContestPage" prefHeight="50.0" prefWidth="156.0" style="-fx-background-color: #3F2B63;" text="Contest" textFill="#ece3e3">
+                     <graphic>
+                        <FontAwesomeIconView fill="#f7f5f5" text="" />
+                     </graphic>
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#gotoLearningPortal" prefHeight="50.0" prefWidth="157.0" style="-fx-background-color: #3F2B63;" text="Learning" textFill="#ece3e3">
+                     <graphic>
+                        <FontAwesomeIconView fill="#efebeb" glyphName="BOOK" />
+                     </graphic>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="216.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="50.0" prefWidth="157.0" style="-fx-background-color: #3F2B63;" text="Log Out" textFill="#ece3e3">
+                     <graphic>
+                        <FontAwesomeIconView fill="#efebeb" glyphName="BOOK" />
+                     </graphic>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <HBox fx:id="hBox2InLearningPortal" alignment="CENTER" layoutX="200.0" layoutY="324.0" prefHeight="115.0" prefWidth="850.0">
+         <children>
+            <Pane prefHeight="122.0" prefWidth="145.0">
+               <children>
+                  <Button layoutX="37.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoYoutube" prefHeight="60.0" prefWidth="84.0" style="-fx-background-color: white;" />
+                  <Label alignment="CENTER" layoutX="43.0" layoutY="83.0" prefHeight="17.0" prefWidth="72.0" text="YouTube" textFill="#14e136">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="50.0" fitWidth="72.0" layoutX="43.0" layoutY="19.0">
+                     <image>
+                        <Image url="@youtube.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="122.0" prefWidth="145.0">
+               <children>
+                  <Button layoutX="37.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoHakerrank" prefHeight="60.0" prefWidth="84.0" style="-fx-background-color: white;">
+                     <graphic>
+                        <ImageView fitHeight="52.0" fitWidth="75.0">
+                           <image>
+                              <Image url="@hackerRank.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="30.0" layoutY="82.0" prefHeight="19.0" prefWidth="98.0" text="HakerRank" textFill="#ffbebe">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="155.0" layoutY="10.0" prefHeight="122.0" prefWidth="145.0">
+               <children>
+                  <Button layoutX="37.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoCodewars" prefHeight="60.0" prefWidth="84.0" style="-fx-background-color: black;" />
+                  <Label alignment="CENTER" layoutX="25.0" layoutY="83.0" prefHeight="19.0" prefWidth="98.0" text="CodeWars" textFill="#ff7676">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="50.0" fitWidth="84.0" layoutX="37.0" layoutY="14.0">
+                     <image>
+                        <Image url="@codewars.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="300.0" layoutY="10.0" prefHeight="122.0" prefWidth="145.0">
+               <children>
+                  <Button layoutX="37.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoCodeorg" prefHeight="60.0" prefWidth="84.0" style="-fx-background-color: black;" />
+                  <Label alignment="CENTER" layoutX="43.0" layoutY="83.0" prefHeight="17.0" prefWidth="72.0" text="Code.org" textFill="#f5f5f5">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="50.0" fitWidth="72.0" layoutX="43.0" layoutY="19.0">
+                     <image>
+                        <Image url="@CodeOrg.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="445.0" layoutY="10.0" prefHeight="122.0" prefWidth="145.0">
+               <children>
+                  <Button layoutX="37.0" layoutY="14.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="84.0" style="-fx-background-color: Azure;">
+                     <graphic>
+                        <ImageView fitHeight="56.0" fitWidth="75.0">
+                           <image>
+                              <Image url="@tutorialPoint.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="35.0" layoutY="81.0" prefHeight="19.0" prefWidth="88.0" text="Tutorialspoint" textFill="#0ee5df">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="590.0" layoutY="10.0" prefHeight="122.0" prefWidth="145.0">
+               <children>
+                  <Button layoutX="37.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoGitHub" prefHeight="67.0" prefWidth="84.0" style="-fx-background-color: White;" />
+                  <Label alignment="CENTER" layoutX="47.0" layoutY="81.0" prefHeight="17.0" prefWidth="72.0" text="GitHub" textFill="#d7f2dc">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="50.0" fitWidth="72.0" layoutX="43.0" layoutY="23.0">
+                     <image>
+                        <Image url="@github.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <HBox fx:id="hBox3InLearningPortal" alignment="CENTER" layoutX="200.0" layoutY="466.0" prefHeight="115.0" prefWidth="850.0">
+         <children>
+            <Pane prefHeight="122.0" prefWidth="145.0">
+               <children>
+                  <Button layoutX="37.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoGDB" prefHeight="60.0" prefWidth="84.0" style="-fx-background-color: white;" />
+                  <Label alignment="CENTER" layoutX="43.0" layoutY="83.0" prefHeight="17.0" prefWidth="72.0" text="GDB" textFill="#14e136">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="50.0" fitWidth="72.0" layoutX="43.0" layoutY="19.0">
+                     <image>
+                        <Image url="@gdb.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="122.0" prefWidth="145.0">
+               <children>
+                  <Button layoutX="37.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoFreeCodeCamp" prefHeight="60.0" prefWidth="84.0" style="-fx-background-color: white;">
+                     <graphic>
+                        <ImageView fitHeight="46.0" fitWidth="63.0">
+                           <image>
+                              <Image url="@frecodeCamp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="30.0" layoutY="82.0" prefHeight="19.0" prefWidth="98.0" text="FreeCode Camp" textFill="#ffe4e4">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="155.0" layoutY="10.0" prefHeight="122.0" prefWidth="145.0">
+               <children>
+                  <Button layoutX="37.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoCoderByte" prefHeight="60.0" prefWidth="84.0" style="-fx-background-color: black;" />
+                  <Label alignment="CENTER" layoutX="25.0" layoutY="83.0" prefHeight="19.0" prefWidth="98.0" text="Coderbyte" textFill="#26ffc9">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="50.0" fitWidth="72.0" layoutX="43.0" layoutY="19.0">
+                     <image>
+                        <Image url="@coderbyte.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="300.0" layoutY="10.0" prefHeight="122.0" prefWidth="145.0">
+               <children>
+                  <Button layoutX="37.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoTopCoder" prefHeight="60.0" prefWidth="84.0" style="-fx-background-color: Honeydew;" />
+                  <Label alignment="CENTER" layoutX="43.0" layoutY="83.0" prefHeight="17.0" prefWidth="72.0" text="topCoder" textFill="#ff020b">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="50.0" fitWidth="64.0" layoutX="47.0" layoutY="19.0">
+                     <image>
+                        <Image url="@topcoder.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="445.0" layoutY="10.0" prefHeight="122.0" prefWidth="145.0">
+               <children>
+                  <Button layoutX="37.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoLightOj" prefHeight="60.0" prefWidth="84.0" style="-fx-background-color: Azure;" />
+                  <Label alignment="CENTER" layoutX="43.0" layoutY="83.0" prefHeight="17.0" prefWidth="72.0" text="LightOJ" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="50.0" fitWidth="72.0" layoutX="43.0" layoutY="19.0">
+                     <image>
+                        <Image url="@lightoj.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="590.0" layoutY="10.0" prefHeight="122.0" prefWidth="145.0">
+               <children>
+                  <Button layoutX="37.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoGuru99" prefHeight="67.0" prefWidth="84.0" style="-fx-background-color: White;" />
+                  <Label alignment="CENTER" layoutX="36.0" layoutY="82.0" prefHeight="17.0" prefWidth="72.0" text="Guru99" textFill="#becf00">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="60.0" fitWidth="64.0" layoutX="49.0" layoutY="18.0">
+                     <image>
+                        <Image url="@guru99.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <HBox fx:id="hBox1InLearningPortal" alignment="CENTER" layoutX="210.0" layoutY="180.0" prefHeight="115.0" prefWidth="831.0">
+         <children>
+            <Pane prefHeight="122.0" prefWidth="145.0">
+               <children>
+                  <Button layoutX="37.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoW3school" prefHeight="60.0" prefWidth="84.0" style="-fx-background-color: tomato;">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="58.0">
+                           <image>
+                              <Image url="@w3schools-logo-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="43.0" layoutY="83.0" prefHeight="17.0" prefWidth="72.0" text="W3School" textFill="#14e136">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="122.0" prefWidth="145.0">
+               <children>
+                  <Button layoutX="37.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoStackOverflow" prefHeight="60.0" prefWidth="84.0" style="-fx-background-color: purple;">
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="48.0">
+                           <image>
+                              <Image url="@stackoverflow-color-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="30.0" layoutY="82.0" prefHeight="19.0" prefWidth="98.0" text="Stackoverflow" textFill="#dd7213">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="155.0" layoutY="10.0" prefHeight="122.0" prefWidth="145.0">
+               <children>
+                  <Button layoutX="37.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoCPAlgorithm" prefHeight="60.0" prefWidth="84.0" style="-fx-background-color: white;">
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="72.0">
+                           <image>
+                              <Image url="@cp-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="25.0" layoutY="83.0" prefHeight="19.0" prefWidth="98.0" text="CP Algorithm" textFill="#dfe4c8">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="300.0" layoutY="10.0" prefHeight="122.0" prefWidth="145.0">
+               <children>
+                  <Button layoutX="37.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoCodeforwin" prefHeight="60.0" prefWidth="84.0" style="-fx-background-color: Honeydew;">
+                     <graphic>
+                        <ImageView fitHeight="59.0" fitWidth="67.0">
+                           <image>
+                              <Image url="@CodeforwinLoGo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="43.0" layoutY="83.0" prefHeight="17.0" prefWidth="72.0" text="Codeforwin" textFill="#ff020b">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="445.0" layoutY="10.0" prefHeight="122.0" prefWidth="145.0">
+               <children>
+                  <Button layoutX="37.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoProgramiz" prefHeight="60.0" prefWidth="84.0" style="-fx-background-color: Azure;">
+                     <graphic>
+                        <ImageView fitHeight="53.0" fitWidth="81.0">
+                           <image>
+                              <Image url="@programiz.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="43.0" layoutY="83.0" prefHeight="17.0" prefWidth="72.0" text="Programiz" textFill="#680de8">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="590.0" layoutY="10.0" prefHeight="122.0" prefWidth="146.0">
+               <children>
+                  <Button layoutX="37.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoGeekForGeeks" prefHeight="67.0" prefWidth="84.0" style="-fx-background-color: White;">
+                     <graphic>
+                        <ImageView fitHeight="46.0" fitWidth="68.0">
+                           <image>
+                              <Image url="@GeeksforGeeks.svg.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="36.0" layoutY="82.0" prefHeight="17.0" prefWidth="72.0" text="gFg" textFill="#447c4f">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

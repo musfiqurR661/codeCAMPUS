@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.SignUpPageController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0">
+         <image>
+            <Image url="@signup.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="500.0" prefHeight="600.0" prefWidth="400.0">
+         <children>
+            <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="31.0" layoutY="140.0">
+               <image>
+                  <Image url="@../../../pcLogo.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="600.0" prefWidth="500.0">
+         <children>
+            <AnchorPane layoutY="60.0" prefHeight="190.0" prefWidth="450.0">
+               <children>
+                  <Label layoutX="5.0" layoutY="40.0" prefHeight="30.0" prefWidth="100.0" text="Email" textFill="#fff8f8" />
+                  <Label layoutX="5.0" layoutY="120.0" prefHeight="30.0" prefWidth="100.0" text="Password" textFill="WHITE" />
+                  <TextField fx:id="emailbox" layoutX="105.0" layoutY="40.0" opacity="0.5" prefHeight="30.0" prefWidth="300.0" />
+                  <Label layoutX="5.0" layoutY="160.0" prefHeight="30.0" prefWidth="100.0" text="Confirm Password" textFill="WHITE" />
+                  <PasswordField fx:id="passwordbox" layoutX="105.0" layoutY="120.0" opacity="0.5" prefHeight="30.0" prefWidth="300.0" />
+                  <PasswordField fx:id="cpasswordbox" layoutX="105.0" layoutY="160.0" opacity="0.5" prefHeight="30.0" prefWidth="300.0" />
+                  <Label layoutX="5.0" layoutY="80.0" prefHeight="30.0" prefWidth="100.0" text="Username" textFill="WHITE" />
+                  <TextField fx:id="usernamebox" layoutX="107.0" layoutY="80.0" opacity="0.5" prefHeight="30.0" prefWidth="300.0" />
+                  <Label layoutX="5.0" prefHeight="30.0" prefWidth="100.0" text="Full Name" textFill="#faefef">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <TextField fx:id="namebox" layoutX="106.0" opacity="0.5" prefHeight="30.0" prefWidth="300.0" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="loginButtonInSignUpPage" layoutX="248.0" layoutY="400.0" mnemonicParsing="false" onAction="#goToLoginPage" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: GRAY;" text="Login" />
+            <Label layoutX="100.0" layoutY="400.0" prefHeight="25.0" text="Already have an account?" textFill="WHITE" />
+            <Button fx:id="signUp" layoutX="185.0" layoutY="316.0" mnemonicParsing="false" onAction="#signUpClicked" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: GRAY;" text="Sign Up" textFill="#381313" />
+            <RadioButton fx:id="teachersRadioButton" layoutX="118.0" layoutY="269.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="80.0" text="Teacher" textFill="WHITE" />
+            <RadioButton fx:id="studentsRadioButton" layoutX="225.0" layoutY="269.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="80.0" text="Student" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

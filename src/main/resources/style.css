@@ -1,0 +1,21 @@
+.login-button {
+    -fx-background-color: aqua;
+    -fx-background-radius: 50;
+    -fx-text-fill: black;
+}
+
+.login-button:hover {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+.signup-button {
+    -fx-background-color: aqua;
+    -fx-background-radius: 50;
+    -fx-text-fill: black;
+}
+
+.signup-button:hover {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}

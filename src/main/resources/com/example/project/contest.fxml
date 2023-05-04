@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="backButtonInContestPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.ContestController">
+   <children>
+      <ImageView fitHeight="675.0" fitWidth="1080.0">
+         <image>
+            <Image url="@25334.jpg" />
+         </image>
+      </ImageView>
+      <HBox layoutX="148.0" layoutY="4.0" prefHeight="45.0" prefWidth="931.0">
+         <children>
+            <AnchorPane prefHeight="45.0" prefWidth="672.0" />
+            <AnchorPane prefHeight="30.0" prefWidth="318.0">
+               <children>
+                  <TextField layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="226.0" />
+                  <Button layoutX="252.0" layoutY="14.0" mnemonicParsing="false" text="Search" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="188.0" layoutY="46.0" prefHeight="619.0" prefWidth="736.0">
+         <children>
+            <Button fx:id="codeforces" layoutX="540.0" layoutY="62.0" mnemonicParsing="false" onAction="#gotoCodeforces" prefHeight="46.0" prefWidth="104.0" style="-fx-background-radius: 20; -fx-background-color: Pink;" text="Codeforces">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="codeChef" layoutX="669.0" layoutY="61.0" mnemonicParsing="false" onAction="#gotoCodeChef" prefHeight="46.0" prefWidth="104.0" style="-fx-background-radius: 20; -fx-background-color: pink;" text="CodeChef" />
+            <Button fx:id="vJudge" layoutX="584.0" layoutY="128.0" mnemonicParsing="false" onAction="#gotoVJudge" prefHeight="46.0" prefWidth="134.0" style="-fx-background-radius: 20; -fx-background-color: Aqua;" text="Virtual-Judge" />
+            <Button fx:id="announcement" layoutX="598.0" layoutY="206.0" mnemonicParsing="false" onAction="#nextScene" prefHeight="26.0" prefWidth="122.0" style="-fx-background-radius: 20; -fx-background-color: #00F0A8;" text="Announcement" />
+            <TableView fx:id="rankTable" layoutX="92.0" layoutY="51.0" prefHeight="545.0" prefWidth="390.0" style="-fx-background-color: black;">
+              <columns>
+                <TableColumn fx:id="rank" prefWidth="43.199981689453125" text="Rank" />
+                <TableColumn fx:id="userName" prefWidth="204.8000030517578" text="UserName" />
+                  <TableColumn fx:id="numContest" prefWidth="83.20001220703125" text="Num Contest" />
+                  <TableColumn fx:id="rating" prefWidth="62.39996337890625" text="Ratting" />
+              </columns>
+            </TableView>
+            <Label layoutX="102.0" layoutY="25.0" prefHeight="26.0" prefWidth="381.0" text="Uinted International University Student Ranking" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button mnemonicParsing="false" onAction="#goBack" prefHeight="35.0" prefWidth="25.0" style="-fx-background-color: dark blue;">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@back.PNG" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane layoutY="35.0" prefHeight="640.0" prefWidth="170.0">
+         <children>
+            <VBox prefHeight="640.0" prefWidth="170.0" style="-fx-background-color: #3F2B63;">
+               <children>
+                  <AnchorPane prefHeight="158.0" prefWidth="170.0" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#gotoTeachersPortal" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #3F2B63;" text="Teacher" textFill="#ece3e3">
+                     <graphic>
+                        <FontAwesomeIconView fill="#fff9f9" glyphName="USER" selectionFill="#fcf8f8" text="" />
+                     </graphic>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#gotoNewsFeed" prefHeight="54.0" prefWidth="175.0" style="-fx-background-color: #3F2B63;" text="News Feed" textFill="#ece3e3">
+                     <graphic>
+                        <FontAwesomeIconView fill="#f4efef" glyphName="DASHBOARD" text="" />
+                     </graphic>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#gotoStudentsPortal" prefHeight="50.0" prefWidth="163.0" style="-fx-background-color: #3F2B63;" text="Students" textFill="#ece3e3">
+                     <graphic>
+                        <FontAwesomeIconView fill="#faf2f2" glyphName="GROUP" />
+                     </graphic>
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#gotoContestPage" prefHeight="50.0" prefWidth="156.0" style="-fx-background-color: #3F2B63;" text="Contest" textFill="#ece3e3">
+                     <graphic>
+                        <FontAwesomeIconView fill="#f7f5f5" text="" />
+                     </graphic>
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#gotoLearningPortal" prefHeight="50.0" prefWidth="157.0" style="-fx-background-color: #3F2B63;" text="Learning" textFill="#ece3e3">
+                     <graphic>
+                        <FontAwesomeIconView fill="#efebeb" glyphName="BOOK" />
+                     </graphic>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="216.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="50.0" prefWidth="157.0" style="-fx-background-color: #3F2B63;" text="Log Out" textFill="#ece3e3">
+                     <graphic>
+                        <FontAwesomeIconView fill="#efebeb" glyphName="BOOK" />
+                     </graphic>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

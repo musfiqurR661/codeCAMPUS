@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.LogInPageController">
+   <children>
+      <ImageView fitHeight="675.0" fitWidth="1080.0">
+         <image>
+            <Image url="@abstract-digital-grid-black-background.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="600.0" prefWidth="500.0">
+         <children>
+            <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="100.0" layoutY="71.0">
+               <image>
+                  <Image url="@../../../pcLogo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="107.0" layoutY="371.0" prefHeight="67.0" prefWidth="311.0" text="codeCAMPUS" textFill="#efeaea">
+               <font>
+                  <Font name="System Bold" size="47.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="534.0" layoutY="27.0" prefHeight="600.0" prefWidth="400.0">
+         <children>
+            <AnchorPane layoutY="150.0" prefHeight="100.0" prefWidth="400.0">
+               <children>
+                  <Label layoutX="5.0" prefHeight="30.0" prefWidth="100.0" text="Username/Email" textFill="#fcc2c2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="5.0" layoutY="40.0" prefHeight="30.0" prefWidth="100.0" text="Password" textFill="#ecbcb2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <PasswordField fx:id="passwordbox" layoutX="105.0" layoutY="40.0" onKeyPressed="#loginClickedByEnterKeyInPasswordeField" prefHeight="30.0" prefWidth="290.0" />
+                  <TextField fx:id="inputbox" layoutX="105.0" onKeyPressed="#loginClickedByEnterKeyInUsernameField" prefHeight="30.0" prefWidth="290.0" />
+                  <Button fx:id="login" layoutX="200.0" layoutY="112.0" mnemonicParsing="false" onMouseClicked="#loginClickedByMouseClicked" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: aqua green;" text="Login">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Button layoutX="971.0" layoutY="27.0" mnemonicParsing="false" onAction="#goToSignUpPage" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: aqua green;" text="Register">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

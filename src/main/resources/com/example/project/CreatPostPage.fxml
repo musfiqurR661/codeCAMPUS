@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.CreatPostPageForStudentController">
+    <children>
+      <AnchorPane layoutX="210.0" layoutY="65.0" prefHeight="200.0" prefWidth="600.0">
+         <children>
+            <TextField prefHeight="100.0" prefWidth="600.0" />
+         </children>
+      </AnchorPane>
+        <VBox layoutY="55.0" prefHeight="619.0" prefWidth="115.0" style="-fx-background-color: pink;">
+            <children>
+                <Button mnemonicParsing="false" onAction="#gotoNewsFeed" prefHeight="114.0" prefWidth="115.0" text="NewsFeed" />
+                <Button mnemonicParsing="false" onAction="#gotoTeachersPortal" prefHeight="127.0" prefWidth="115.0" text="Teacher's " />
+                <Button mnemonicParsing="false" onAction="#gotoStudentsPortal" prefHeight="124.0" prefWidth="115.0" text="Students" />
+                <Button mnemonicParsing="false" onAction="#gotoContestPage" prefHeight="130.0" prefWidth="115.0" text="contest" />
+                <Button mnemonicParsing="false" onAction="#gotoLearningPortal" prefHeight="126.0" prefWidth="115.0" text="Learning Portal" />
+            </children>
+        </VBox>
+        <AnchorPane layoutX="780.0" prefHeight="50.0" prefWidth="300.0">
+            <children>
+                <TextField layoutY="15.0" prefHeight="25.0" prefWidth="220.0" />
+                <Button layoutX="222.5" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.5" text="Search" />
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="25.0" prefWidth="780.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#gotoHomePage" prefHeight="25.0" text="Back" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutY="25.0" prefHeight="25.0" prefWidth="780.0">
+            <children>
+                <Button layoutX="695.0" mnemonicParsing="false" text="Creat Post" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="200.0" layoutY="50.0" prefHeight="25.0" prefWidth="600.0">
+            <children>
+                <Button layoutX="30.0" mnemonicParsing="false" prefHeight="25.0" text="All" />
+                <Button layoutX="94.0" mnemonicParsing="false" text="Announcement" />
+                <Button layoutX="243.0" mnemonicParsing="false" text="Conntest Announcement" />
+                <Button layoutX="423.0" mnemonicParsing="false" text="Query" />
+            </children>
+        </AnchorPane>
+        <ScrollPane fx:id="scrollablePaneforCreatPostPage" fitToWidth="true" layoutX="200.0" layoutY="75.0" prefWidth="600.0" />
+    </children>
+</AnchorPane>

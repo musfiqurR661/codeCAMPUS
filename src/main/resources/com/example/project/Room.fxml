@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="530.0" prefWidth="330.0" stylesheets="@../../../../java/com/example/project/Css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.Room">
+   <children>
+      <Pane fx:id="chat" layoutY="30.0" prefHeight="500.0" prefWidth="330.0" style="-fx-background-color: #263238;">
+         <children>
+            <TextArea fx:id="msgRoom" editable="false" prefHeight="455.0" prefWidth="330.0" style="-fx-background-color: #263238;" styleClass="text-area" stylesheets="@../Css/style.css" wrapText="true">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </TextArea>
+            <AnchorPane layoutY="455.0" prefHeight="45.0" prefWidth="330.0" style="-fx-background-color: #263238;">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="73.0" layoutX="284.0" layoutY="2.0" onMouseClicked="#handleSendEvent" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-sent.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="msgField" layoutX="3.0" layoutY="3.0" onKeyPressed="#sendMessageByKey" prefHeight="36.0" prefWidth="279.0" promptText="Write messages here...." styleClass="msgBox" stylesheets="@../Css/style.css">
+                     <font>
+                        <Font name="Arial" size="19.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <Pane prefHeight="30.0" prefWidth="330.0" style="-fx-background-color: #263238;">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="40.0" onMouseClicked="#gotoHomePage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/back.PNG" />
+               </image>
+            </ImageView>
+            <Label layoutX="40.0" prefHeight="30.0" prefWidth="290.0" text="UIU CP Community" textFill="#d4d4c1">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </children>
+</AnchorPane>

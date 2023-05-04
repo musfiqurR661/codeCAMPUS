@@ -1,0 +1,18 @@
+.root{
+-fx-background-color: #00bfff;
+}
+
+.table-view{
+-fx-background-color: transparent;
+}
+.table-view:focused{
+-fx-background-color: transparent;
+}
+.table-view-row-cell:odd{
+-fx-background-color: $bfff00;
+-fx-background-insets:0, 0 0 1 0;
+}
+.table-view-row-cell:odd{
+-fx-background-color: $ffb3b3;
+-fx-background-insets:0, 0 0 1 0;
+}
